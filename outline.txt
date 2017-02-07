@@ -1,0 +1,31 @@
+wes Desktop $ mkdir basic_repo
+wes Desktop $ cd basic_repo/
+wes basic_repo $ git init
+Initialized empty Git repository in /Users/wes/Desktop/basic_repo/.git/
+wes (master #) basic_repo $ git remote add origin https://github.com/justwes/basic_repo.git
+wes (master #) basic_repo $ touch basic.txt
+wes (master #) basic_repo $ touch repo.txt
+wes (master #) basic_repo $ git add -A
+wes (master +) basic_repo $ git commit -m "initial commit"
+[master (root-commit) d99432d] initial commit
+ 2 files changed, 19 insertions(+)
+ create mode 100644 basic.txt
+ create mode 100644 repo.txt
+wes (master) basic_repo $ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 4.83 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/justwes/basic_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+wes (master) basic_repo $ git add -A
+wes (master +) basic_repo $ git commit -m "added new lines"
+[master 79630a7] added new lines
+ 3 files changed, 9 insertions(+), 6 deletions(-)
+ create mode 100644 outline.txt
+wes (master) basic_repo $ touch outline.txt
+wes (master) basic_repo $ atom outline.txt
+
+now I'll upload this file and add it to the repo
