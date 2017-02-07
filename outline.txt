@@ -29,3 +29,18 @@ wes (master) basic_repo $ touch outline.txt
 wes (master) basic_repo $ atom outline.txt
 
 now I'll upload this file and add it to the repo
+
+wes (master) basic_repo $ git add -A
+wes (master +) basic_repo $ git commit -m "added outline file"
+[master e310692] added outline file
+ 1 file changed, 31 insertions(+)
+wes (master) basic_repo $ git push -u origin master
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.24 KiB | 0 bytes/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/justwes/basic_repo.git
+   d99432d..e310692  master -> master
+Branch master set up to track remote branch master from origin.
